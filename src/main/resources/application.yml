@@ -1,0 +1,26 @@
+spring:
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS}
+    topic:
+      replication-factor: ${KAFKA_REPLICATION_FACTOR}
+      num-partitions: ${KAFKA_NUM_PARTITIONS}
+    streams:
+      application-id: test-eventlog
+      cache-max-size-buffering: 20MB
+      state-dir: ${STATE_DIR}
+      properties:
+        # num.standby.replicas: 1
+        num.stream.threads: 3
+        auto.offset.reset: earliest
+        schema.registry.url: ${SCHEMA_REGISTRY_URL}
+        processing.guarantee: exactly_once
+        default.timestamp.extractor: org.apache.kafka.streams.processor.WallclockTimestampExtractor
+        buffered.records.per.partition: 100
+        default.key.serde: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+        default.value.serde: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+logging:
+  level:
+    org.springframework: ${LOG_LEVEL}
+    com.iprediction.consumerservice: ${LOG_LEVEL}
+    com.wiinvent.wiinventeventlogstream: ${LOG_LEVEL}
+debug: ${DEBUG}

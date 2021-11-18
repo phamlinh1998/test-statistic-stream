@@ -1,0 +1,25 @@
+{
+  "type": "record",
+  "name": "CampaignStatistics",
+  "namespace": "wiinvent.stats",
+  "fields": [
+      {
+        "name": "campaignId",
+        "type": "long",
+        "default": 0
+      },
+      {
+        "name": "total",
+        "type": ["null", "Statistics"],
+        "default": null
+      },
+      {
+        "name": "platforms",
+        "type": {
+          "type": "map",
+          "values": "Statistics"
+        },
+        "default": {}
+      }
+  ]
+}

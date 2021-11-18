@@ -1,0 +1,57 @@
+{
+  "type": "record",
+  "name": "CampaignViewFrequency",
+  "namespace": "wiinvent.campaign",
+  "fields": [
+      {
+        "name": "id",
+        "type": [
+             "null",
+             "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "deviceId",
+        "type": [
+             "null",
+             "string"
+        ],
+        "default": null
+      },
+      {
+         "name": "campaignId",
+         "type": "long",
+         "default": 0
+      },
+      {
+         "name": "startDate",
+        "type": [
+             "null",
+             "string"
+        ],
+        "default": null
+      },
+      {
+         "name": "endDate",
+        "type": [
+             "null",
+             "string"
+        ],
+        "default": null
+      },
+      {
+         "name": "count",
+         "type": "int",
+         "default": 0
+      },
+      {
+        "name": "campaignFrequency",
+        "type": [
+             "null",
+             "string"
+        ],
+        "default": null
+      }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "record",
+  "name": "Statistics",
+  "namespace": "wiinvent.stats",
+  "fields": [
+      {
+         "name": "impression",
+         "type": "long",
+         "default": 0
+      },
+      {
+         "name": "click",
+         "type": "long",
+         "default": 0
+      },
+      {
+          "name": "uniqueUsers",
+          "type": "long",
+          "default": 0
+      }
+  ]
+}

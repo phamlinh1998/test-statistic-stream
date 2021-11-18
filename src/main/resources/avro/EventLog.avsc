@@ -1,0 +1,163 @@
+{
+    "type": "record",
+    "name": "EventLog",
+    "namespace": "wiinvent.event_log",
+    "fields": [
+        {
+            "name": "id",
+            "type": [
+                "null",
+                {
+                    "type": "string",
+                    "avro.java.string": "String"
+                }
+            ],
+            "default": null
+        },
+        {
+            "name": "deviceId",
+            "type": [
+                "null",
+                {
+                    "type": "string",
+                    "avro.java.string": "String"
+                }
+            ],
+            "default": null
+        },
+        {
+            "name": "viewerId",
+            "type": "int",
+            "default": 0
+        },
+        {
+            "name": "clientTime",
+            "type": "long",
+            "default": 0
+        },
+        {
+            "name": "serverTime",
+            "type": "long",
+            "default": 0
+        },
+        {
+            "name": "processTime",
+            "type": "long",
+            "default": 0
+        },
+        {
+            "name": "ip",
+            "type": [
+                "null",
+                {
+                    "type": "string",
+                    "avro.java.string": "String"
+                }
+            ],
+            "default": null
+        },
+        {
+            "name": "city",
+            "type": [
+                "null",
+                {
+                    "type": "string",
+                    "avro.java.string": "String"
+                }
+            ],
+            "default": null
+        },
+        {
+            "name": "country",
+            "type": [
+                "null",
+                {
+                    "type": "string",
+                    "avro.java.string": "String"
+                }
+            ],
+            "default": null
+        },
+        {
+            "name": "platform",
+            "type": {
+                "type": "string",
+                "avro.java.string": "String"
+            },
+            "default": "WEB"
+        },
+        {
+            "name": "type",
+            "type": {
+                "type": "string",
+                "avro.java.string": "String"
+            },
+            "default": "IMPRESSION"
+        },
+        {
+            "name": "campaignFrequency",
+            "type": {
+                "type": "string",
+                "avro.java.string": "String"
+            },
+            "default": "DAY"
+        },
+        {
+            "name": "ownerId",
+            "type": "long",
+            "default": 0
+        },
+        {
+            "name": "channelId",
+            "type": "long",
+            "default": 0
+        },
+        {
+            "name": "streamId",
+            "type": "long",
+            "default": 0
+        },
+        {
+            "name": "overlayId",
+            "type": "long",
+            "default": 0
+        },
+        {
+            "name": "campaignId",
+            "type": "long",
+            "default": 0
+        },
+        {
+            "name": "sessionId",
+            "type": "long",
+            "default": 0
+        },
+        {
+            "name": "createdAt",
+            "type": "long",
+            "default": 0
+        },
+        {
+            "name": "browser",
+            "type": [
+                "null",
+                {
+                    "type": "string",
+                    "avro.java.string": "String"
+                }
+            ],
+            "default": null
+        },
+        {
+            "name": "os",
+            "type": [
+                "null",
+                {
+                    "type": "string",
+                    "avro.java.string": "String"
+                }
+            ],
+            "default": null
+        }
+    ]
+}

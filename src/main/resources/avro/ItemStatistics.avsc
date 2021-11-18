@@ -1,0 +1,35 @@
+{
+  "type": "record",
+  "name": "ItemStatistics",
+  "namespace": "wiinvent.stats",
+  "fields": [
+      {
+        "name": "itemId",
+        "type": ["null", "string"],
+        "default": null
+      },
+      {
+        "name": "total",
+        "type": ["null", "Statistics"],
+        "default": null
+      },
+      {
+        "name": "platforms",
+        "type": {
+          "type": "map",
+          "values": "Statistics"
+        },
+        "default": {}
+      },
+      {
+        "name": "date",
+        "type": ["null", "string"],
+        "default": null
+      },
+      {
+        "name": "key",
+        "type": ["null", "string"],
+        "default": null
+      }
+  ]
+}
